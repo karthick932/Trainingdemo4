@@ -1,0 +1,72 @@
+name: Perftestproject
+version: 2
+projectReferences: 
+resources: 
+  - name: .classpath
+    type: com.ibm.rational.test.lt.classpath
+    dependencies: 
+      - path: /Perftestproject/src
+        type: javaClasspath
+  - name: 'Compound Tests'
+    resources: 
+  - name: Datasets
+    resources: 
+  - name: 'JMeter Tests'
+    resources: 
+  - name: Locations
+    resources: 
+  - name: Results
+    resources: 
+      - name: perftestscript4_1775192401299.stats
+        type: com.ibm.rational.test.lt.stats.session
+        properties: 
+          startTime: 1775192401299
+          tags: 
+          testId: A1F12F19E5982F80D6FDB96436353239
+          testName: perftestscript4
+        dependencies: 
+          - path: /Perftestproject/Results/perftestscript4_1775192401299_orch!system.mstats
+            type: statsSessionStore
+          - path: /Perftestproject/Results/perftestscript4_1775192401299_orch!system.rstats
+            type: statsSessionStore
+          - path: /Perftestproject/Results/perftestscript4_1775192401299_perf!localhost.mstats
+            type: statsSessionStore
+          - path: /Perftestproject/Results/perftestscript4_1775192401299_perf!localhost.rstats
+            type: statsSessionStore
+          - path: /Perftestproject/Results/perftestscript4_1775192408396.executiondlr
+            type: statsSessionAsset
+          - path: /Perftestproject/Tests/perftestscript4.testsuite
+            type: statsSessionTest
+      - name: perftestscript4_1775192401299_orch!system.mstats
+      - name: perftestscript4_1775192401299_orch!system.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: perftestscript4_1775192401299_perf!localhost.mstats
+      - name: perftestscript4_1775192401299_perf!localhost.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: perftestscript4_1775192408396.executiondlr
+  - name: Schedules
+    resources: 
+  - name: Tests
+    resources: 
+      - name: perftestscript4.recdata
+      - name: perftestscript4.recsession
+        type: com.ibm.rational.test.lt.recsession
+        dependencies: 
+          - path: /Perftestproject/Tests/perftestscript4.recdata
+            type: recsessionRecdata
+      - name: perftestscript4.testsuite
+        type: com.ibm.rational.test.lt.test
+        version: 11.0.7.0
+        properties: 
+          features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.http'
+          type: com.ibm.rational.test.lt.lttest
+          uid: A1F12F19E5982F80D6FDB96436353239
+        dependencies: 
+          - path: /Perftestproject/Tests/perftestscript4.recsession
+            type: testRecsession
+  - name: src
+    resources: 
+      - name: test
+        resources: 
+          - name: Perftestscript4_Test_A1F12F19E5982F80D6FDB96436353239.java
+            type: com.ibm.rational.test.lt.generatedCode
