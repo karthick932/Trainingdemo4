@@ -15,12 +15,23 @@
 				<item value="A1F12F19E5982F80D6FDB96436353239"/>
 			</list>
 		</section>
+		<section name="editor-A1F12F74A1A409B0E0B6E16235663233">
+			<item key="file" value="L/Perftestproject/Schedules/VUSchedule.testsuite"/>
+			<item key="lastEditorViewMode" value="0"/>
+			<list key="lastselection">
+				<item value="A1F12F74B7E4C110E0B6E16235663233"/>
+			</list>
+		</section>
 	</section>
 	<section name="last.test.options.tab">
 		<section name="editor-A1F12F19E5982F80D6FDB96436353239">
 		</section>
+		<section name="editor-A1F12F74A1A409B0E0B6E16235663233">
+		</section>
 	</section>
 	<section name="sync-points">
 		<item key="size" value="0"/>
+	</section>
+	<section name="CEF_NewWizard">
 	</section>
 </section>
