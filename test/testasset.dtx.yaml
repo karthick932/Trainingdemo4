@@ -1,0 +1,5 @@
+steps:
+  - log: {}
+  - pause: {}
+  - select: {}
+  - open: {}
